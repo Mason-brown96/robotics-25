@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { 
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif; 
+      background: #000;
+      color: #fff;
+      margin: 0; 
+      padding: 0 0 2rem 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5em 1.5em 2em 1.5em;
+    }
+    h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 0.2em;
+      letter-spacing: -1.5px;
+      color: #fff;
+    }
+    h2 {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 2.1em 0 0.5em 0;
+      letter-spacing: -.5px;
+      color: #fff;
+    }
+    p, ul, ol {
+      font-size: 1.1em;
+      margin-top: 0.3em;
+      margin-bottom: 1.1em;
+      line-height: 1.7;
+      max-width: 750px;
+      color: #fff;
+    }
+    ul, ol {
+      padding-left: 1.3em;
+    }
+    a {
+      color: #800000;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #b22222;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      background: #000;
+      font-size: 1em;
+      color: #fff;
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      border: 1px solid #333;
+      text-align: left;
+      vertical-align: top;
+      color: #fff;
+    }
+    th {
+      background: #111;
+      font-weight: 600;
+      font-size: 1em;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background: #111;
+    }
+    tr {
+      transition: background 0.18s;
+    }
+    tr:hover {
+      background: #222;
+    }
+    .merged-cell-center {
+      text-align: center;
+    }
+    .problem-set-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1em;
+    }
+    .problem-set-row {
+      display: flex;
+      flex-direction: row;
+      gap: 0.25em;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .maroon-semi {
+      color: #800000;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin: 0 0.1em;
+      user-select: none;
+    }
+    .copyright-short {
+      text-align: center;
+      margin-top: 1.3em;
+      color: #aaa;
+      font-size: 1em;
+      letter-spacing: 0.01em;
+    }
+    @media (max-width: 700px) {
+      main { padding: 1em 0.2em; }
+      table, thead, tbody, th, td, tr { display: block; }
+      th { position: absolute; top: -9999px; left: -9999px; }
+      tr { margin-bottom: 2rem; }
+      td { border: none; border-bottom: 1px solid #222; position: relative; padding-left: 50%; }
+      td:before {
+        position: absolute;
+        top: 0; left: 0;
+        width: 45%;
+        padding-right: 1rem;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #fff;
+      }
+      td:nth-of-type(1):before { content: "Week"; }
+      td:nth-of-type(2):before { content: "Topic"; }
+      td:nth-of-type(3):before { content: "Lecture Slides"; }
+      td:nth-of-type(4):before { content: "Lecture Notes"; }
+      td:nth-of-type(5):before { content: "Problem Set"; }
+      .problem-set-row { flex-direction: column; gap: 0.2em; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Space Robotics</h1>
+
+    <h2>Welcome</h2>
+    <p>
+      This subject presents a broad overview of the technologies associated with robotics for space environments and related applications of modern robotic systems. Major topics covered are sensing, mapping, navigation, path planning, and the coordination of robots in planetary and microgravity settings. The subject consists of classes on robot fundamentals and case studies on practical robot systems. Class material is illustrated through laboratory problem sets and a group assessment. The subject aims to give students the essential skills to develop robotic systems for particular space applications and related broader contexts.
+    </p>
+    
+    <h2>Syllabus</h2>
+    <p>
+      The class syllabus can be found <a href="syllabus.pdf" target="_blank">here</a>.
+    </p>
+
+    <h2>Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Lecture Slides</th>
+          <th>Lecture Notes</th>
+          <th>Problem Set</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>00</td>
+          <td>Introduction</td>
+          <td><a href="slides/lecture_0.pdf" target="_blank">Lecture 0 Slides</a></td>
+          <td><a href="notes/lecture_notes_0.pdf" target="_blank">Lecture 0 Notes</a></td>
+          <td>
+            <a href="problems/problem_set_0.pdf" target="_blank">Problem Set 0</a>
+          </td>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>Sensors</td>
+          <td><a href="slides/lecture_1.pdf" target="_blank">Lecture 1 Slides</a></td>
+          <td><a href="notes/lecture_notes_1.pdf" target="_blank">Lecture 1 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_1.pdf" target="_blank">Problem Set 1</a><span class="maroon-semi">;</span><a href="problems/problem_set_1_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Localization 1</td>
+          <td><a href="slides/lecture_2.pdf" target="_blank">Lecture 2 Slides</a></td>
+          <td><a href="notes/lecture_notes_2.pdf" target="_blank">Lecture 2 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_2.pdf" target="_blank">Problem Set 2</a><span class="maroon-semi">;</span><a href="problems/problem_set_2_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Mapping</td>
+          <td><a href="slides/lecture_3.pdf" target="_blank">Lecture 3 Slides</a></td>
+          <td><a href="notes/lecture_notes_3.pdf" target="_blank">Lecture 3 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_3.pdf" target="_blank">Problem Set 3</a><span class="maroon-semi">;</span><a href="problems/problem_set_3_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Path Planning</td>
+          <td><a href="slides/lecture_4.pdf" target="_blank">Lecture 4 Slides</a></td>
+          <td><a href="notes/lecture_notes_4.pdf" target="_blank">Lecture 4 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_4.pdf" target="_blank">Problem Set 4</a><span class="maroon-semi">;</span><a href="problems/problem_set_4_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>A1</td>
+          <td colspan="4" class="merged-cell-center">
+            <a href="assignments/assignment_1.pdf" target="_blank">Assignment 1: Path Planning</a>
+          </td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>Decision Making and Coordination</td>
+          <td><a href="slides/lecture_5.pdf" target="_blank">Lecture 5 Slides</a></td>
+          <td><a href="notes/lecture_notes_5.pdf" target="_blank">Lecture 5 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_5.pdf" target="_blank">Problem Set 5</a><span class="maroon-semi">;</span><a href="problems/problem_set_5_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>Localization 2</td>
+          <td><a href="slides/lecture_6.pdf" target="_blank">Lecture 6 Slides</a></td>
+          <td><a href="notes/lecture_notes_6.pdf" target="_blank">Lecture 6 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_6.pdf" target="_blank">Problem Set 6</a><span class="maroon-semi">;</span><a href="problems/problem_set_6_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>A2</td>
+          <td colspan="4" class="merged-cell-center">
+            <a href="assignments/assignment_2.pdf" target="_blank">Assignment 2: Kalman Filter</a>
+          </td>
+        </tr>
+        <tr>
+          <td>07</td>
+          <td>Simultaneous Localisation and Mapping (SLAM)</td>
+          <td><a href="slides/lecture_7.pdf" target="_blank">Lecture 7 Slides</a></td>
+          <td><a href="notes/lecture_notes_7.pdf" target="_blank">Lecture 7 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_7.pdf" target="_blank">Problem Set 7</a><span class="maroon-semi">;</span><a href="problems/problem_set_7_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>08</td>
+          <td>Introduction to Gazebo</td>
+          <td><a href="slides/lecture_8.pdf" target="_blank">Lecture 8 Slides</a></td>
+          <td><a href="notes/lecture_notes_8.pdf" target="_blank">Lecture 8 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_8.pdf" target="_blank">Problem Set 8</a><span class="maroon-semi">;</span><a href="problems/problem_set_8_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>09</td>
+          <td>Computer Vision 1</td>
+          <td><a href="slides/lecture_9.pdf" target="_blank">Lecture 9 Slides</a></td>
+          <td><a href="notes/lecture_notes_9.pdf" target="_blank">Lecture 9 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_9.pdf" target="_blank">Problem Set 9</a><span class="maroon-semi">;</span><a href="problems/problem_set_9_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Computer Vision 2</td>
+          <td><a href="slides/lecture_10.pdf" target="_blank">Lecture 10 Slides</a></td>
+          <td><a href="notes/lecture_notes_10.pdf" target="_blank">Lecture 10 Notes</a></td>
+          <td class="problem-set-links">
+            <span class="problem-set-row">
+              <a href="problems/problem_set_10.pdf" target="_blank">Problem Set 10</a><span class="maroon-semi">;</span><a href="problems/problem_set_10_code.zip" target="_blank">Code</a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>A3</td>
+          <td colspan="4" class="merged-cell-center">
+            <a href="assignments/assessment_3.pdf" target="_blank">Assessment 3: Autonomous exploration</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="copyright-short">
+      &copy; Licensed under CC BY-NC-SA 4.0. 2025.
+    </div>
+  </main>
+</body>
+</html>

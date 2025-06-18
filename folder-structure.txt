@@ -1,0 +1,43 @@
+course-website/
+├── index.html
+├── slides/
+│   ├── lecture_0.pdf
+│   ├── lecture_1.pdf
+│   ├── lecture_2.pdf
+│   ├── lecture_3.pdf
+│   ├── lecture_4.pdf
+│   ├── lecture_5.pdf
+│   ├── lecture_6.pdf
+│   ├── lecture_7.pdf
+│   ├── lecture_8.pdf
+│   ├── lecture_9.pdf
+│   ├── lecture_10.pdf
+├── notes/
+│   ├── lecture_notes_0.pdf
+│   ├── lecture_notes_1.pdf
+│   ├── lecture_notes_2.pdf
+│   ├── lecture_notes_3.pdf
+│   ├── lecture_notes_4.pdf
+│   ├── lecture_notes_5.pdf
+│   ├── lecture_notes_6.pdf
+│   ├── lecture_notes_7.pdf
+│   ├── lecture_notes_8.pdf
+│   ├── lecture_notes_9.pdf
+│   ├── lecture_notes_10.pdf
+├── problems/
+│   ├── problem_set_0.pdf
+│   ├── problem_set_1.pdf
+│   ├── problem_set_2.pdf
+│   ├── problem_set_3.pdf
+│   ├── problem_set_4.pdf
+│   ├── problem_set_5.pdf
+│   ├── problem_set_6.pdf
+│   ├── problem_set_7.pdf
+│   ├── problem_set_8.pdf
+│   ├── problem_set_9.pdf
+│   ├── problem_set_10.pdf
+├── assignments/
+│   ├── assignment_1.pdf
+│   ├── assignment_2.pdf
+│   ├── assessment_3.pdf
+├── .gitignore
